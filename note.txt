@@ -1,0 +1,1 @@
+masukan wasthustore kedalam xampp dahulu lalu run main.py

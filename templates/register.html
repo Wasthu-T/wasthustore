@@ -1,0 +1,45 @@
+{%extends 'layout.html'%}
+
+{%block head%}
+<title>WasthuStore</title>
+{%endblock%}
+
+{%block body%}
+
+<div>
+    <img src="{{url_for('static', filename='5295526.jpg')}}" alt="" class="bg">
+</div>
+
+<div class="text-white container mb-5 mt-5 p-2">
+    <div class="row justify-content-md-center">
+        <div class="col col-12 col-md-5">
+            <img src="{{url_for('static', filename='jingliu-daftar.png')}}" alt="" class="maskot">
+        </div>
+        <div class="col col-12 col-md-5 ">
+            <h3>Daftar sekarang dan nikmati kemudahan fitur WasthuStore</h3>
+            <div class=" tab-content" id="pills-tabContent">
+                <!-- tap 1 -->
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Masukan Email">
+                </div>
+                <!-- tap 2 -->
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">No.Telp</label>
+                    <input type="tel" class="form-control" id="formGroupExampleInput2" placeholder="Masukan No.Telp">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput3" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="formGroupExampleInput2"
+                        placeholder="Masukan Password">
+                    <a class="float-sm-end lupa" href="forgot">lupa kata sandi?</a>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-info btn-lg" style="width: 100%;">Daftar</button>
+            <a class="daftar" href="login">Sudah memiliki akun?</a>
+        </div>
+
+    </div>
+</div>
+</div>
+{%endblock%}
